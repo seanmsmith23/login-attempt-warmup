@@ -1,0 +1,20 @@
+<%= form_for @user, url: sessions_path, method: :post do |f| %>
+  <ul>
+    <li>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+    </li>
+    <li>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </li>
+    <%= f.submit "Sign in" %>
+  </ul>
+
+<% end %>
+
+<% if @user.errors.any? %>
+  <% @user.errors.full_messages.each do |error| %>
+    <p><%= error %></p>
+  <% end %>
+<% end %>
