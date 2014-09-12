@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-config.middleware.use Rack::Attack
+
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
