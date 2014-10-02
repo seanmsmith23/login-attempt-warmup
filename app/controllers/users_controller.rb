@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   protect_from_forgery with: :null_session
   skip_before_action :ensure_current_user
 
-
   def index
     @user = User.order(:email)
   end
@@ -17,20 +16,18 @@ class UsersController < ApplicationController
       redirect_to root_path
     else
         render :new
-      end
     end
-
-
+  end
 
   def show
     @user = User.order(:email)
   end
-end
 
   private
   def allowed_params
     params.require(:user).permit(:email, :password)
   end
 
+end
 
 
