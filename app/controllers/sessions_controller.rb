@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       p "You're Super smart"
       redirect_to root_path
     else
-      if @user.logins == 0 && @user.logins < 3
+      if @user.logins == 0
         p "logins are 0"
         @user.login_attempt_counter
       else
