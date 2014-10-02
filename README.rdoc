@@ -1,28 +1,16 @@
-== README
+Oh no!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Your site is super popular and people are trying to log into other people's accounts!
 
-Things you may want to cover:
+You need to let those no-good thieves know that you're onto them.
 
-* Ruby version
+When someone attempts to login too many times you need to show them an error, then lock them out for a couple minutes.
 
-* System dependencies
+The Schema, views etc are all setup but for some reason the login just isn't working!
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Find the logic and make it work! <=(read in Tim Gunn voice)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Clone
+Bundle
+Rake db:migrate

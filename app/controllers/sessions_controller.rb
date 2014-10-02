@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     if @user && @user.password == params[:user][:password]
       session[:user_id] = @user.id
       @user.erase_logins
-      p "You're Stupid"
+      p "You're Super smart"
       redirect_to root_path
     elsif @user
       if @user.logins == 0
